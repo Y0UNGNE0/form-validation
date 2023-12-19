@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.red {
+  color: #ff0000;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +26,41 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.para-colour {
+  color: #00bcd4;
+  width: fit-content;
 }
 
+.container {
+  width: fit-content;
+}
+.form {
+  width: fit-content;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.logo {
+  background-image: url("https://i.imgur.com/GMmCQHC.png");
+}
+
+@media screen {
+}
+
+@media (min-width: 992px) {
+  .bigger-widh {
+    width: 205%;
+  }
+}
+
+@media (min-width: 760px) {
+  .bigger-widh {
+    width: 205%;
   }
 }
