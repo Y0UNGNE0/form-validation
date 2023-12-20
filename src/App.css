@@ -26,6 +26,10 @@
   color: white;
 }
 
+#main {
+  padding: 50px;
+}
+
 .para-colour {
   color: #00bcd4;
   width: fit-content;
@@ -45,22 +49,95 @@
     transform: rotate(360deg);
   }
 }
+.border-5 {
+  border-width: 12px !important;
+  border-color: #dee2e615;
+}
+.border {
+  border-color: #dee2e615;
+}
+.navcolour {
+  background: #33353c;
+}
+
+#foo {
+  border-radius: 12px;
+  border-width: 12px !important;
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.123);
+  background: #ddd;
+}
 
 .logo {
-  background-image: url("https://i.imgur.com/GMmCQHC.png");
+  background-image: url(./images/image.jpg);
+  width: 100vh;
 }
 
-@media screen {
+.siz {
+  width: 100%;
 }
 
-@media (min-width: 992px) {
-  .bigger-widh {
-    width: 205%;
+.sizx {
+  padding-right: 16rem !important;
+  padding-left: 16rem !important;
+}
+
+.hopi {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+/* Example: Change background color for small screens */
+@media (max-width: 576px) {
+  .size {
+    width: 70%;
+  }
+  .size1 {
+    width: 20%;
+  }
+
+  #main {
+    padding: 0px;
+  }
+
+  .sizx {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+}
+/* Example: Change font size for medium screens */
+@media (min-width: 576px) and (max-width: 768px) {
+  .size {
+    width: 80%;
+  }
+  .size1 {
+    width: 20%;
+  }
+  #main {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  .sizx {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
   }
 }
 
-@media (min-width: 760px) {
-  .bigger-widh {
-    width: 205%;
+@media (min-width: 768px) and (max-width: 912px) {
+  .size {
+    width: 80%;
+  }
+  .size1 {
+    width: 20%;
+  }
+  #main {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  .sizx {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
   }
 }

@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+// MyForm.js
 
-export default function MyForm() {
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import FormDataDisplay from "./FormDataDisplay";
+
+const MyForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [job, setJob] = useState("");
   const [flinks, setFliks] = useState("");
+  const [formDataDisplay, setFormDataDisplay] = useState(null);
+
+  const navigate = useNavigate();
 
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value);
@@ -37,7 +44,6 @@ export default function MyForm() {
 
     const emailRegex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\.[a-zA-z]{2,3}$/;
     const jobRegex = /^[^\d]+$/;
-
     const numberRegex = /^\d{10}$/;
 
     if (!emailRegex.test(email)) {
@@ -55,8 +61,38 @@ export default function MyForm() {
       return;
     }
 
-    alert("Form submitted successfully!");
+    if (!(firstName && lastName && email && number && job && flinks)) {
+      alert("Please fill in all the fields");
+      return;
+    }
+
+    // Set the form data to display in the FormDataDisplay component
+    setFormDataDisplay({
+      firstName,
+      lastName,
+      email,
+      number,
+      job,
+      flinks,
+    });
   };
+
+  const isAnyFieldEmpty = !(
+    firstName &&
+    lastName &&
+    email &&
+    number &&
+    job &&
+    flinks
+  );
+
+  useEffect(() => {
+    if (formDataDisplay) {
+      // Redirect to /rem after form data is set
+      console.log("Redirecting to /rem");
+      navigate("/rem");
+    }
+  }, [formDataDisplay, navigate]);
 
   return (
     <div>
@@ -121,7 +157,7 @@ export default function MyForm() {
               <input
                 className="form-control py-2"
                 id="phone"
-                type="text"
+                type="number"
                 value={number}
                 onChange={handleNumberChange}
                 placeholder=""
@@ -161,13 +197,30 @@ export default function MyForm() {
           </div>
           <div className="form-row d-flex py-2 card-body text-end">
             <div className="form-group col-md-6 py-3 px-2 card-body">
-              <button type="submit" className="btn btn-primary px-5">
+              <button
+                type="submit"
+                className="btn btn-primary px-5"
+                disabled={isAnyFieldEmpty}
+              >
                 REQUEST A DEMO
               </button>
             </div>
           </div>
         </form>
+
+        {formDataDisplay && (
+          <FormDataDisplay
+            firstName={formDataDisplay.firstName}
+            lastName={formDataDisplay.lastName}
+            email={formDataDisplay.email}
+            number={formDataDisplay.number}
+            job={formDataDisplay.job}
+            flinks={formDataDisplay.flinks}
+          />
+        )}
       </div>
     </div>
   );
-}
+};
+
+export default MyForm;
