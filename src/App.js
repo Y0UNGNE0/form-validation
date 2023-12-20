@@ -12,9 +12,9 @@ function App() {
       {/* <div className="container  pb-5 "> */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MyForm />} />
-          <Route path="/rem" element={<FormDataDisplay />} />
-          <Route path="/des" element={<Design />} />
+          {/* <Route path="/" element={<MyForm />} />
+          <Route path="/rem" element={<FormDataDisplay />} /> */}
+          <Route path="/" element={<Design />} />
         </Routes>
       </BrowserRouter>
       {/*    </div> */}
