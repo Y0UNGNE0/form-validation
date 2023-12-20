@@ -72,6 +72,10 @@
   width: 100vh;
 }
 
+.logog {
+  background-image: url(./images/bgforwebsite.jpg);
+}
+
 .siz {
   width: 100%;
 }
@@ -102,6 +106,9 @@
     padding-right: 2rem !important;
     padding-left: 2rem !important;
   }
+  .cen {
+    margin-top: 30px;
+  }
 }
 /* Example: Change font size for medium screens */
 @media (min-width: 576px) and (max-width: 768px) {
@@ -120,6 +127,9 @@
   .sizx {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
+  }
+  .cen {
+    margin-top: 30px;
   }
 }
 
