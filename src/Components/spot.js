@@ -40,7 +40,7 @@ export default function spot() {
               />
             </div>
             <div className="col-md-8 text-start">
-              <p className="text-muted">JULY 24</p>
+              <p className="text-muted pt-3 mb-2">JULY 24</p>
               <h5>
                 <strong>REPAIRING A HYPERSPACE WINDOW</strong>
               </h5>
@@ -60,7 +60,7 @@ export default function spot() {
               />
             </div>
             <div className="col-md-8 text-start">
-              <p className="text-muted">JULY 24</p>
+              <p className="text-muted pt-3 mb-2">JULY 24</p>
               <h5>
                 <strong>REPAIRING A HYPERSPACE WINDOW</strong>
               </h5>
@@ -80,7 +80,7 @@ export default function spot() {
               />
             </div>
             <div className="col-md-8 text-start">
-              <p className="text-muted">JULY 24</p>
+              <p className="text-muted pt-3 mb-2">JULY 24</p>
               <h5>
                 <strong>REPAIRING A HYPERSPACE WINDOW</strong>
               </h5>
@@ -144,7 +144,7 @@ export default function spot() {
                 <div className="py-3">
                   <button
                     type="button"
-                    className="button text-white px-5 py-3"
+                    className="button text-white px-3 py-3"
                     style={buttonStyleB}
                   >
                     <svg

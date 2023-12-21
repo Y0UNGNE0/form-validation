@@ -10,10 +10,10 @@ export default function twodiv() {
   return (
     <div>
       {" "}
-      <div className="row w-88 pb-5 mb-5">
+      <div className="row w-88 pb-5 mb-5 ">
         <div className="col-md-6 justify-content-center">
           <div className=" px-5 text-center">
-            <div className="row border-bottom pt-5 pb-2">
+            <div className="row borderbottom pt-5 pb-2">
               <div className="col-md pb-3 pt-2">
                 <p className="fs-3">
                   <strong> THIS IS AN IMPORTANT HEADING</strong>
@@ -21,7 +21,7 @@ export default function twodiv() {
                 <p className="fs-7">AND THIS IS WHERE WE TALK ABOUT WHY</p>
               </div>
             </div>
-            <div className="row border-top mt-2 py-3"></div>
+            <div className="row bordertop mt-2 py-3"></div>
 
             <div className="pb-2 mb-3">
               <p>
@@ -62,7 +62,7 @@ export default function twodiv() {
         </div>
         <div className="col-md-6 justify-content-center">
           <div className="px-5 text-center">
-            <div className="row border-bottom pt-5 pb-2">
+            <div className="row borderbottom pt-5 pb-2">
               <div className="col-md pb-3 pt-2">
                 <p className="fs-3">
                   <strong>THIS IS AN IMPORTANT HEADING</strong>
@@ -70,7 +70,7 @@ export default function twodiv() {
                 <p className="fs-7">AND THIS IS WHERE WE TALK ABOUT WHY</p>
               </div>
             </div>
-            <div className="row border-top mt-2 py-3"></div>
+            <div className="row bordertop mt-2 py-3"></div>
 
             <div className="pb-2 mb-3">
               <p>

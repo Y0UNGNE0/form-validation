@@ -11,10 +11,10 @@ const Footer = () => {
 
   return (
     <div className="row p-5 bg-dark text-colour boder-bottom pb-5">
-      <div className="col-md-3">
+      <div className="col-md-3 ">
         <div className="text-start ps-3 py-3 text-colour">
           <div>
-            <h3 className="text-white">
+            <h3 className="text-white pb-3">
               <strong>FILLER LINKS</strong>
             </h3>
           </div>
@@ -60,9 +60,9 @@ const Footer = () => {
         {" "}
         <div className="text-start ps-3 py-3 text-colour">
           <div>
-            <h3 className="text-white">
-              <strong>FILLER LINKS</strong>
-            </h3>
+            <h4 className="text-white pb-3">
+              <strong>MORE FILLER </strong>
+            </h4>
           </div>
           <div className="border-bottom ">
             <p>Quam turpis feugiat dolor</p>
@@ -82,9 +82,9 @@ const Footer = () => {
         </div>{" "}
         <div className="text-start ps-3 py-3 text-colour">
           <div>
-            <h3 className="text-white">
-              <strong>FILLER LINKS</strong>
-            </h3>
+            <h4 className="text-white pb-3">
+              <strong>EVEN MORE FILLER</strong>
+            </h4>
           </div>
           <div className="border-bottom text-colour">
             <p>Quam turpis feugiat dolor</p>
@@ -107,9 +107,9 @@ const Footer = () => {
         {" "}
         <div className="text-start ps-3 py-3 text-colour">
           <div>
-            <h3 className="text-white">
+            <h4 className="text-white pb-3">
               <strong>FILLER LINKS</strong>
-            </h3>
+            </h4>
           </div>
           <div className="border-bottom text-colour">
             <p>
@@ -144,7 +144,7 @@ const Footer = () => {
         </div>{" "}
         <div className="text-start ps-3 py-3 text-colour">
           <div>
-            <h3 className="text-white">
+            <h3 className="text-white pb-3">
               <strong>FILLER LINKS</strong>
             </h3>
           </div>

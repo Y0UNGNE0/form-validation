@@ -111,7 +111,7 @@ export default function design() {
           </div>
         </div>
         <div>
-          <div className="sizx justify-content-center align-content-center align-items-end ">
+          <div className="sizx justify-content-center align-content-center align-items-end pb-5">
             {" "}
             <div className="row border-bottom pb-5 ">
               <div className="col-md h-25"></div>

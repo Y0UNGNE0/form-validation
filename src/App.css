@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.border-top-two-div {
+  border-top: var(--bs-border-width) var(--bs-border-style) #21252933 !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -68,6 +72,12 @@
   border-top: var(--bs-border-width) var(--bs-border-style) #dee2e621 !important;
 }
 
+.bordertop {
+  border-top: var(--bs-border-width) var(--bs-border-style) #00000021 !important;
+}
+.borderbottom {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) #00000021 !important;
+}
 .spot-card {
   border: none;
 }
