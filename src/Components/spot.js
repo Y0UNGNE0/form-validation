@@ -36,7 +36,7 @@ export default function spot() {
             <div className="col-md-4">
               <img
                 src="https://slp-statics.astockcdn.net/static_assets/staging/24winter/home/curated-collections/card-2.jpg?width=580"
-                className="w-100"
+                className="w-100 rounded"
               />
             </div>
             <div className="col-md-8 text-start">
@@ -56,7 +56,7 @@ export default function spot() {
             <div className="col-md-4">
               <img
                 src="https://slp-statics.astockcdn.net/static_assets/staging/24winter/home/curated-collections/card-2.jpg?width=580"
-                className="w-100"
+                className="w-100 rounded"
               />
             </div>
             <div className="col-md-8 text-start">
@@ -76,7 +76,7 @@ export default function spot() {
             <div className="col-md-4">
               <img
                 src="https://slp-statics.astockcdn.net/static_assets/staging/24winter/home/curated-collections/card-2.jpg?width=580"
-                className="w-100"
+                className="w-100 rounded"
               />
             </div>
             <div className="col-md-8 text-start">
@@ -120,7 +120,7 @@ export default function spot() {
             <div className="card text-start spot-card ">
               <img
                 src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-                className="card-img-top"
+                className="card-img-top rounded"
                 alt="..."
               />
               <div className="py-3 laxz">
