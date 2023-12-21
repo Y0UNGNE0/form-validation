@@ -60,11 +60,19 @@
   background: #33353c;
 }
 
+.spot-card {
+  border: none;
+}
+
 #foo {
   border-radius: 12px;
   border-width: 12px !important;
   box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.123);
   background: #ddd;
+}
+.laxz {
+  background-color: #282c342b;
+  /* color: #00000046; */
 }
 
 .logo {
@@ -89,6 +97,10 @@
   margin-top: 9px;
   margin-bottom: 9px;
 }
+
+.laptop-gap {
+  gap: 45px;
+}
 /* Example: Change background color for small screens */
 @media (max-width: 576px) {
   .size {
@@ -108,6 +120,12 @@
   }
   .cen {
     margin-top: 30px;
+  }
+  .wrapping-on-phone {
+    flex-wrap: wrap;
+  }
+  .phone-gap {
+    gap: 5px;
   }
 }
 /* Example: Change font size for medium screens */
@@ -131,11 +149,17 @@
   .cen {
     margin-top: 30px;
   }
+  .wrapping-on-phone {
+    flex-wrap: wrap;
+  }
+  .phone-gap {
+    gap: 5px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 912px) {
   .size {
-    width: 80%;
+    width: 70%;
   }
   .size1 {
     width: 20%;
@@ -149,5 +173,8 @@
   .sizx {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
+  }
+  .wrapping-on-phone {
+    flex-wrap: wrap;
   }
 }
